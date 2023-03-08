@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <!-- wyswietlanie na urzadzeniach mobilnych-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- tytul stron -->
+        <title>Moje Słodkości</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bg">
+            <img src="./images/cherry.png" alt="" class="bg__img bg__img--cherry">
+            <img src="./images/cherry.png" alt="" class="bg__img bg__img--cherry1">
+            <img src="./images/strawberry.png" alt="" class="bg__img bg__img--strawberry">
+            <img src="./images/strawberry.png" alt="" class="bg__img bg__img--strawberry1">
+            <img src="./images/strawberry.png" alt="" class="bg__img bg__img--strawberry2">
+            <img src="./images/strawberry.png" alt="" class="bg__img bg__img--strawberry3">
+            <img src="./images/cherry.png" alt="" class="bg__img bg__img--cherry2">
+        </div>
+        <div id="wrapper">
+                <header>
+                    <img
+                    src="./images/banner.png" alt="banner - header"/>
+                </header>
+
+                <nav>
+                    <a class="menu" href="index.html">O MNIE</a><a class="menu active" href="galeria.html">GALERIA</a><a class="menu" href="kontakt.html">KONTAKT</a><a class="menu" href="koniec.html">KONIEC</a>
+                </nav>
+
+                <section>
+                    <article>
+                        <h1>Zobacz kilka moich tortów!</h1>
+                        <ul class="gallery">
+                            <li class="thumbnail"><img src="photos/tort1.jpg" alt="pierwszy"/></li>
+                            <li class="thumbnail"><img src="photos/tort2.jpg" alt="drugi"/></li>
+                            <li class="thumbnail"><img src="photos/tort3.jpg" alt="trzeci"/></li>
+                            <li class="thumbnail"><img src="photos/tort4.jpg" alt="czwarty"/></li>
+                        </ul>
+                        <div class="popup hidden">
+                            <button class="popup__close">x</button>
+                            <img src="" alt="" class="popup__img">
+                            <button class="popup__arrow popup__arrow--left">&larr;</button>
+                            <button class="popup__arrow popup__arrow--right">&rarr;</button>
+
+                        </div>
+                        <!--<p><figure class="photo">
+                            <img src="tort1.jpg" alt="tort1">
+                            <figcaption>
+                                Tort czekoladowy
+                            </figcaption>
+                        </figure>
+                        <figure class="photo">
+                            <img src="tort2.jpg" alt="tort2">
+                            <figcaption>
+                                Tort z owocami
+                            </figcaption>
+                        </figure>
+                        <figure class="photo">
+                            <img src="tort3.jpg" alt="tort3">
+                            <figcaption>
+                                Tort dla dziewczynki
+                            </figcaption>
+                        </figure>
+                        <figure class="photo">
+                            <img src="tort4.jpg" alt="tort4">
+                            <figcaption>
+                                Tort urodzinowy
+                            </figcaption>
+                        </figure>-->
+                    </article>
+                </section>
+                <footer>©2022 mojeslodkosci.pl</footer>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

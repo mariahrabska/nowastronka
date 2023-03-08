@@ -1,0 +1,314 @@
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: #00ff2a;*/
+    background: linear-gradient(to right top, #ffffff, #c3846d);
+    
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    /*background: rgb(246, 1, 140);*/
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.20));
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /*dla przegladarek safari bo tam dziala to tylko w ten sposob*/
+}
+
+header img {
+    width: 100%; 
+    display: block;
+}
+
+nav {
+    background-color: #cf7979;
+}
+
+a.menu {
+    display: inline-block;
+    width: 25%;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+a.menu:hover {
+    background-color: rgb(218, 138, 138);
+    -webkit-transition: all 0.5s ease;
+    transition: all 1s ease;
+}
+
+.active {
+    background-color: rgb(156, 84, 84);
+}
+
+article {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    
+}
+
+article h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 10% 20px 10%;
+    border: 2px solid rgb(134, 8, 25);
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(71, 6, 17), rgba(151, 19, 41, 0.8));
+    color: rgb(255, 255, 255); /*w razie gdyby cos nie zadzialalo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+img.left {
+    float:left;
+    margin: 0 10px 10px 0;
+    width: 25%;
+    border-radius: 30% 48%;
+}
+
+article p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.gallery {
+    background: linear-gradient(60deg, rgba(255,255,255,0.3), rgba(255,255,255,0.5));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 64px;
+    border-radius: 20px;
+}
+
+.thumbnail {
+    border: solid 3px rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 48px 1px rgba(172, 112, 73, 0.3);
+    cursor: pointer;
+    margin: 32px;
+    max-width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.popup {
+    animation: fadeIn 0.3s;
+    align-content: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.popup.hidden {
+    display: none;
+}
+.popup.fadeout {
+    animation: fadeOut 0.3s both;
+}
+
+.popup__img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.popup__close {
+    background-color: transparent;
+    color: rgba(37, 2, 2, 0.8);
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 280px;
+    right:70px;
+    font-size: 50px;
+}
+
+.popup__arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px; /* to powinno wysrodkowac ale cos nie tak */
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.popup__arrow:hover {
+    opacity: 1;
+}
+
+ .popup__arrow {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+ }
+.popup__arrow--left {
+    left: 2%;
+}
+.popup__arrow--right {
+    right: 2%;
+}
+/*.photo {
+    margin: 10px;
+    width: 940px;
+    background: white;
+    padding: 10px;
+    opacity: 0.7;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo img {
+    flex-basis: 100%;
+    width: 920px;
+}
+
+.photo figcaption {
+    margin-top: 10px;
+}
+
+.photo:hover {
+    opacity: 1;
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+*/
+iframe {
+    width: 100%;
+}
+
+.bg__img {
+    position: absolute;
+    /*top:0;
+    left: 5%;
+    animation: slideDown 5s linear infinite;*/
+}
+
+.bg__img--strawberry {
+    height: 20vh;
+    top:0;
+    left: 2%;
+    animation: slideDown 7s linear infinite;
+}
+
+.bg__img--cherry {
+    height: 25vh;
+    top:0;
+    right: 2%;
+    animation: slideDown 9s linear infinite;
+
+}
+.bg__img--strawberry1 {
+    height: 30vh;
+    top:0;
+    right: 12%;
+    animation: slideDown 5s linear infinite;
+}
+.bg__img--strawberry2 {
+    height: 15vh;
+    top:0;
+    right: 35%;
+    animation: slideDown 4s linear infinite;
+}
+.bg__img--strawberry3 {
+    height: 25vh;
+    top:0;
+    right: 50%;
+    animation: slideDown 7s linear infinite;
+}
+.bg__img--cherry1 {
+    height: 30vh;
+    top:0;
+    left: 15%;
+    animation: slideDown 6s linear infinite;
+
+}
+.bg__img--cherry2 {
+    height: 30vh;
+    top:0;
+    left: 50%;
+    animation: slideDown 3s linear infinite;
+
+}
+
+  
+
+@keyframes slideDown { /*do bg images aby sie ruszały*/
+     
+    
+   from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh)}
+
+    100%    { opacity: 0; }
+    0%   { opacity: 1; }
+
+}
+
+
+ @keyframes fadeIn { /*do pinup aby gdy się włącza było ladne przejscie*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+ @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+ }
+
+footer {
+    height: 40px;
+    background-color: #cf7979;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
